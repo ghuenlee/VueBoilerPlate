@@ -27,16 +27,23 @@
       </b-jumbotron>
       <router-view/>
     </b-container>
+    <Sidebar />
   </div>
 </template>
 
 <script>
+  import Sidebar from '@/components/Sidebar.vue'
+
   export default {
     name: 'App',
+
     data() {
       return {
         counter: 0
       }
+    },
+    components: {
+      Sidebar
     }
   }
 
